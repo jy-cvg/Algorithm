@@ -1,7 +1,7 @@
 c = int(input())
 
 for i in range(c):
-    n, m = map(int, input().split()))
+    n, m = map(int, input().split())
     numberlist = list(map(int, input().split()))
 
     sumlist = list()
