@@ -1,7 +1,6 @@
-case = int(input())
-
-for i in range(case):
+c = int(input())
+for i in range(c): 
     int(input())
 
-    numList = list(map(int, input().split()))
+    numberlist = list(map(int, input().split()))
     print(f"#{i+1}", max(numList) - min(numList))
