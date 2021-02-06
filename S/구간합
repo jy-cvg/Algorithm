@@ -1,11 +1,11 @@
-case = int(input())
+c = int(input())
 
-for i in range(case):
+for i in range(c):
     n, m = list(map(int, input().split()))
-    numberList = list(map(int, input().split()))
+    numberlist = list(map(int, input().split()))
 
-    sumList = list()
+    sumlist = list()
     for j in range(n-m+1):
-        sumList.append(sum(numberList[j:j+m]))
+        sumlist.append(sum(numberlist[j:j+m]))
 
-    print(f"#{i+1} {max(sumList) - min(sumList)}")
+    print(f"#{i+1} {max(sumlist) - min(sumlist)}")
