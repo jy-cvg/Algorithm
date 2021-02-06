@@ -3,4 +3,4 @@ for i in range(c):
     int(input())
 
     numberlist = list(map(int, input().split()))
-    print(f"#{i+1}", max(numlist) - min(numlist))
+    print(f"#{i+1}", max(numberlist) - min(numberlist))
