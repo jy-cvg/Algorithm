@@ -1,1 +1,33 @@
-
+a=[1,2,3,4,5,6,7,8,9,10,11]
+b=["too high", "too low", "right on"]
+c=[]
+ck=0
+while 1:
+    n=int(input())
+    if n==0:
+            break
+    n2=input()
+    if n2=="too high":
+        if len(a)<=1:
+            ck=1
+            a.clear()
+            continue
+        a=a[:a.index(n)]
+  
+    if n2=="too low":
+        if len(a)<=1:
+            ck=1
+            a.clear()
+            continue
+        a=a[a.index(n+1):]
+  
+    if n2=="right on":
+        if n in a:
+            c.append('Stan may be honest')
+        if n not in a or ck==1:
+            c.append('Stan is dishonest')
+        ck=0
+        a=[1,2,3,4,5,6,7,8,9,10,11]
+         
+for i in range(len(c)):
+    print(c[i])
